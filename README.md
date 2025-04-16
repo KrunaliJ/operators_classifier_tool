@@ -84,3 +84,11 @@ Take input from the user (a line of Python code).
 *result = classify_operators(code)
 Analyze the input to classify all operators using the function we defined.
 
+*Print results
+python
+Copy
+Edit
+for group, ops in result.items():
+    if ops:
+        print(f"{group}: {', '.join(ops)}")
+For every group that had matches, print the group and the list of operators found in it.
